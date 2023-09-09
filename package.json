@@ -1,0 +1,19 @@
+{
+  "name": "eslint-plugin-boundaries-import-subpaths",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": "./src/main.js",
+  "imports": {
+    "#entities/*": "./src/entities/*",
+    "#usecases/*": "./src/usecases/*"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-plugin-boundaries": "^3.4.0"
+  }
+}
